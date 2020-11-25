@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="register.jsp" method="post">
+    <fieldset>
+    
+    	
+      <!--novalidate 유효성 검증을 하지 않음-->
+      <legend>필수 사항</legend>
+      <div>
+      	<input type="hidden" name="age" value="3">
+      </div>
+      <p>
+      	<label for="name">이름</label>
+      	<input type="text" name="name" id="name" />
+      </p>
+      
+      	<label for="email">이메일</label>
+      	<input type="email" name="" id="email" /> 
+         <p>
+          <label for="">비밀번호</label>
+          <input type="password" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>부가 입력 사항</legend>
+        <p>
+          거주지를 선택해주세요
+          <br />
+          <select name="" id="">
+            <option value="서울시">서울시</option>
+            <option value="부산시">부산시</option>
+            <option value="제주시">제주시</option>
+          </select>
+        </p>
+        <p>
+          <label for="">취미</label>
+          <input type="checkbox" name="hobby" id="" />독서
+          <input type="checkbox" name="hobby" id="" />여행
+          <input type="checkbox" name="hobby" id="" />영화감상
+        </p>
+      
+      
+      
+      
+      <p>
+      <span>성별</span>
+      <label for="male">남성</label>
+      <input type="radio" name="gender" id="male" /> 
+      <label for="female">여성</label>
+      <input type="radio" name="gender" id="female" />       
+      </p>
+      <p>
+      	<span>사진을 등록해 주세요</span>
+      	<input type="file" name="" id="avatar" />
+      </p>
+      <p>
+      	<span>방문 경로를 말씀해 주세요</span><br />
+      	<textarea name="mag" id="" rows="10" cols="30"></textarea>
+      </p>
+      </fieldset>
+        <input type="submit" value="회원가입"/>
+        <input type="reset" value="재작성"/>
+        <button type="submit">전송</button>
+  </body>
+</html>
